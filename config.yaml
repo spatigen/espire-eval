@@ -1,0 +1,17 @@
+localizing_trials: 3
+moving_trials: 5
+
+server:
+  ip: 127.0.0.1
+  port: 6001
+
+client:
+  ip: 127.0.0.1
+  port: 6000
+  log_dir: log  # path where logs are saved in the current directory
+
+model:
+  name: opengvlab/internvl3-78b
+  prompt_dir: prompt
+  temperature: 0.0
+  max_tokens: 8192

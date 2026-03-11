@@ -1,0 +1,13 @@
+[project]
+name = "internvl-wrapper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "espire-eval-common",
+    "requests>=2.32.5",
+]
+
+[tool.uv.sources]
+espire-eval-common = { git = "ssh://git@github.com/spatigen/espire-eval.git", branch = "main" }
