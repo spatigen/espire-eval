@@ -45,8 +45,7 @@ options:
 
 ---
 
-## ℹ️ Model Notes
+## 🧾 Prompt Tips
 
-Prompt Reference:
 - [Gemini API](https://ai.google.dev/gemini-api/docs/image-understanding#object-detection)
 - [2D spatial understanding notebook](https://colab.research.google.com/github/google-gemini/cookbook/blob/main/quickstarts/Spatial_understanding.ipynb)
