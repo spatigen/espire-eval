@@ -47,18 +47,17 @@ options:
 
 ## ℹ️ Model Notes
 
-模型支持对物体进行定位：
-- Qwen2.5-VL 模型返回的坐标均相对于缩放后的图像左上角的绝对值，单位为像素。可参考 Qwen2.5-VL 中的代码将坐标映射到原图中。
-- Qwen2.5-VL 模型 480\*480 ~ 2560\*2560 分辨率范围内，物体定位效果较为鲁棒，在此范围之外可能会偶发 bbox 漂移现象。
-- Qwen3-VL 模型返回的坐标将为相对坐标，坐标值会归一化到 0-999。
+Coordinate System:
+- Qwen2.5-VL returns coordinates as absolute pixel values relative to the top-left corner of the resized image.
+- Qwen3-VL's default coordinate system has been changed from the absolute coordinates used in Qwen2.5-VL to relative coordinates ranging from 0 to 1000. (You don't need to calculate the resized_w)
 
 ---
 
 ## 🧾 Prompt Tips
 
-|定位方式|支持的输出方式|推荐Prompt|
+|Localization Method|Supported Output Format|Recommended Prompt|
 |:---|:---|:---|
-|Box 定位|JSON 或纯文本|检测图中所有{物体}并以{JSON/纯文本}格式输出其 bbox 的坐标|
-|Point 定位|JSON 或 XML|以点的形式定位图中所有{物体}，以{JSON/XML}格式输出其 point 坐标|
+|Box|JSON or Plain Text|Detect all {objects} in the image and output their bbox coordinates in {JSON/plain text} format|
+|Point|JSON or XML|Locate all {objects} in the image using points, and output their point coordinates in {JSON/XML} format|
 
 [Examples](https://github.com/QwenLM/Qwen3-VL/blob/main/cookbooks/2d_grounding.ipynb)
