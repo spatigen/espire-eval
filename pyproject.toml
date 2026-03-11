@@ -1,0 +1,23 @@
+[project]
+name = "espire-eval-common"
+version = "0.1.0"
+description = "Common Espire Evaluation Module"
+readme = "README.md"
+authors = []
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "loguru>=0.7.3",
+    "msgpack>=1.1.2",
+    "numpy>=2.2.6",
+    "opencv-python>=4.11.0.86",
+    "pyyaml>=6.0.3",
+    "pyzmq>=27.1.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.2,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.uv.build-backend]
+source-exclude = ["/assets/**"]
+wheel-exclude = ["/assets/**"]
