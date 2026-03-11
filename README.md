@@ -19,7 +19,7 @@
     # Run
     uv run main.py
     ```
-> Replace \<MODEL\> with one of the following options: qwen, gemini, internvl
+> Replace \<MODEL\> with one of the following options: `qwen`, `gemini`, `internvl`, `robobrain` (w/o api key)
 
 ---
 
@@ -30,7 +30,7 @@
 | Qwen | `qwen` | https://github.com/spatigen/espire-eval/tree/qwen |
 | Gemini | `gemini` | https://github.com/spatigen/espire-eval/tree/gemini |
 | InternVL | `internvl` | https://github.com/spatigen/espire-eval/tree/internvl |
-| Robobrain2 | `robobrain` | https://github.com/spatigen/espire-eval/tree/robobrain |
+| Robobrain | `robobrain` | https://github.com/spatigen/espire-eval/tree/robobrain |
 
 ---
 
