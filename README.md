@@ -30,7 +30,7 @@
 | Qwen | `qwen` | https://github.com/spatigen/espire-eval/tree/qwen |
 | Gemini | `gemini` | https://github.com/spatigen/espire-eval/tree/gemini |
 | InternVL | `internvl` | https://github.com/spatigen/espire-eval/tree/internvl |
-| Robobrain | `robobrain` | https://github.com/spatigen/espire-eval/tree/robobrain |
+| RoboBrain | `robobrain` | https://github.com/spatigen/espire-eval/tree/robobrain |
 
 ---
 
