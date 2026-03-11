@@ -1,0 +1,15 @@
+localizing_trials: 3
+moving_trials: 5
+
+server:
+  ip: 127.0.0.1
+  port: 6001
+
+client:
+  ip: 127.0.0.1
+  port: 6000
+  log_dir: log  # path where logs are saved in the current directory
+
+model:
+  name: RoboBrain2.0-7B
+  prompt_dir: prompt

@@ -1,0 +1,26 @@
+[project]
+name = "robobrain-wrapper"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10,<3.11"
+dependencies = [
+    "accelerate>=1.10.1",
+    "opencv-python>=4.12.0.88",
+    "qwen-vl-utils>=0.0.14",
+    "sentence-transformers>=5.1.2",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "transformers>=4.56.2",
+    "espire-eval-common",
+]
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128", marker = "sys_platform == 'linux'" }
+torchvision = { index = "pytorch-cu128", marker = "sys_platform == 'linux'" }
+espire-eval-common = { git = "ssh://git@github.com/spatigen/espire-eval.git", branch = "main" }
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true

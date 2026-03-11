@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+uv.lock
+
+# Log
+log*
+
+# MISC
+result/
+output/
+
+# IDE
+.vscode/
+.idea/
+
+# Model
+RoboBrain2.0-*
