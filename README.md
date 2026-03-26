@@ -1,6 +1,16 @@
 # Espire Evaluation
 
 ## 🚀 Quick Start
+<details>
+<summary>0. Server Setup</summary>
+
+Before running the evaluation, you need to [set up](https://github.com/spatigen/espire-server) and start the server:
+
+```bash
+cd $SERVER_PROJECT_PATH && docker compose run --rm --service-ports espire bash scripts/serve.sh
+```
+</details>
+
 1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
 2. Setup:
     ```bash
