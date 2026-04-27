@@ -28,6 +28,34 @@
 
 ---
 
+## 🛠️ Custom Model Integration
+
+To integrate your own model into the Espire Evaluation framework, follow these steps for a minimal setup:
+
+### 1. Implement the Driver
+In your implementation file, create a new class (recommended name: `EspireDriver`) that inherits from the `BaseDriver` class found in [src/espire_eval_common/driver.py](src/espire_eval_common/driver.py#L12).
+
+You are required to implement the following two methods, which correspond to the two critical stages of the evaluation:
+- `localizing`: Define how your model handles the localization phase.
+- `moving`: Define the control logic for the execution/movement phase.
+
+### 2. Launch the Evaluation
+To run the evaluation with your custom model, use the `start` function provided in [src/espire_eval_common/start.py](src/espire_eval_common/start.py#L51).
+
+**Example Workflow:**
+- Create a `main.py` (you can refer to the `main.py` in existing model branches).
+- Import your `EspireDriver`.
+- Pass the driver and necessary parameters into the `start` function.
+
+### Advanced Integration
+
+The [src/espire_eval_common/driver.py](src/espire_eval_common/driver.py) file provides additional driver types for more complex scenarios:
+
+* [ReflectionDriver](src/espire_eval_common/driver.py#L467): Use this if your model supports a reflective execution flow. You will need to implement additional `NotImplemented` methods to define the specific logic for reflection.
+* [TwoViewDriver](src/espire_eval_common/driver.py#L666): Use this if your testing process requires simultaneous access to both **World View** and **Ego View**.
+
+---
+
 ## 🤖 Supported Model
 
 | Model | Branch | URL |
