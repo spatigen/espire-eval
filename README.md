@@ -67,10 +67,16 @@ The [src/espire_eval_common/driver.py](src/espire_eval_common/driver.py) file pr
 
 ---
 
-## 🧠 Pseudocode for Reflective Execution
+## 🧠 Evaluation Process
 
-### 🔎 Localization with Reflection
-<img src="assets/reflective_localize.png" width="70%" />
+### Localization
 
-### 🧭 Execution with Reflection
-<img src="assets/reflective_execution.png" width="70%" />
+[w/o reflection](src/espire_eval_common/driver.py#L109)
+
+[w/ reflection](src/espire_eval_common/driver.py#L509)
+
+### Execution
+
+[w/o reflection](src/espire_eval_common/driver.py#L146)
+
+[w/ reflection](src/espire_eval_common/driver.py#L601)
